@@ -35,7 +35,7 @@ module Backbone
            @jst_path = File.join(backbone_path,"templates", plural_name, "#{action}.jst.ejs")
            
            template "view.coffee", @view_path
-           template "template.jst", @jst_path
+           template "template.jst.eco", @jst_path
          end
       end
 
